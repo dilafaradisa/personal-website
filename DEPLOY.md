@@ -62,6 +62,62 @@ Or while attached (`tmux attach -t webapp`), press `Ctrl+C`.
 
 ---
 
+## Alternative: Running with nohup
+
+`nohup` (no hangup) is a simple way to run a process that survives terminal closure without additional tools.
+
+### Start the app with nohup
+```bash
+cd ~/personal-website
+source venv/bin/activate
+nohup gunicorn --bind 0.0.0.0:2605 --workers 4 app:app > gunicorn.log 2>&1 &
+```
+
+This runs the app in the background and logs output to `gunicorn.log`. You can close your terminal and the app stays running.
+
+### View logs
+```bash
+tail -f gunicorn.log
+```
+
+### Check if app is running
+```bash
+ps aux | grep gunicorn
+```
+
+### Stop the app
+```bash
+pkill gunicorn
+```
+
+Or kill by process ID:
+```bash
+kill <PID>
+```
+
+### nohup Commands Cheat Sheet
+
+| Command | Description |
+|---------|-------------|
+| `nohup gunicorn --bind 0.0.0.0:2605 --workers 4 app:app > gunicorn.log 2>&1 &` | Start app in background |
+| `tail -f gunicorn.log` | View logs (follow mode) |
+| `ps aux \| grep gunicorn` | Check if running |
+| `pkill gunicorn` | Stop the app |
+
+### Advantages of nohup
+- ✅ Simplest to use (no extra packages)
+- ✅ Lightweight
+- ✅ Works on any Unix-like system
+- ✅ Good for quick deployments
+
+### Disadvantages of nohup
+- ⚠️ Doesn't auto-restart on failure
+- ⚠️ Doesn't survive server reboot
+- ⚠️ Harder to manage multiple instances
+- ⚠️ No isolated environment
+
+---
+
 ## Alternative: Running with Docker
 
 Docker is recommended for production—it provides better isolation and easier management than tmux.
