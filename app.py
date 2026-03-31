@@ -12,5 +12,5 @@ def index():
         return f"Error: {e}", 500
 
 if __name__ == '__main__':
-    print("Starting Flask app on http://localhost:5001")
-    app.run(debug=True, host='0.0.0.0', port=5001, use_reloader=False)
+    print("Starting Flask app on http://localhost:2605")
+    app.run(debug=True, host='0.0.0.0', port=2605, use_reloader=False)

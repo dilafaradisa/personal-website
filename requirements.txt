@@ -1,0 +1,8 @@
+# Web framework for building the application
+Flask==2.3.3
+
+# WSGI utility library that handles HTTP requests/responses (Flask depends on it)
+Werkzeug==2.3.7
+
+# Production-grade WSGI HTTP server for running Flask app (instead of Flask's development server)
+gunicorn==21.2.0
