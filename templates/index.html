@@ -1,10 +1,210 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="text-center">
-    <img src="https://media.licdn.com/dms/image/D5603AQFQwQwQwQwQwQ/profile-displayphoto-shrink_800_800/0/1660000000000?e=2147483647&v=beta&t=placeholder" class="rounded-circle mb-4" alt="Adila Zahra Faradisa" width="160" height="160">
-    <h1 class="fw-bold" style="color: #a64ca6;">Adila Zahra Faradisa</h1>
-    <p class="lead" style="color: #d291bc;">Data Enthusiast | Software Developer</p>
-    <p class="mt-4">Welcome to my personal portfolio website!<br>Explore my experience, projects, and more below.</p>
-    <a href="/about" class="btn btn-lg" style="background: #f8e1f4; color: #a64ca6;">Learn More About Me</a>
-</div>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container-xxl">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='profilPhoto.jpeg') }}" alt="Adila Zahra Faradisa">
+            </div>
+            <div class="hero-text">
+                <h1>Hi! I'm <span class="accent">Adila Zahra Faradisa</span></h1>
+                <p class="subtitle">Data Analyst / Data Engineer</p>
+                <p>Based in Jakarta, Indonesia, I have over two years of experience working with data and turning it into actionable insights. I have built a solid foundation in data analysis, SQL, Python, and business intelligence tools to support decision making and improve operational performance.</p>
+                <p>I am currently exploring data engineering at Pacmann.ai to further develop my ability to build and maintain the systems that support data workflows</p>
+                <div>
+                    <a href="#projects" class="btn-cta">View My Work</a>
+                    <a href="#contact" class="btn-secondary-cta">Get In Touch →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container-xxl">
+        <!-- <p class="section-title">A few projects I’ve worked on</p> -->
+        <h2 class="section-heading">A few projects <span class="accent-word">I've worked on</span></h2>
+        <div class="divider"></div>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <!-- <div class="project-icon">🎖️</div> -->
+                <h3>RUBI Award - Report Automation</h3>
+                <p class="project-type">Data Analytics & Automation</p>
+                <p>Developed an automated daily customer report system using Tableau Prep that reduced manual analysis time by 80%. System processes operational and customer data to generate actionable insights for stakeholders.</p>
+                <p class="project-tech">Tableau Prep • SQL • Data Automation • Python</p>
+                <a href="https://drive.google.com/file/d/1SFEPmNb0qMxRQeZ_4qyEkik3mtOwkyNr/view?usp=sharing" target="_blank" class="project-link">Go to</a>
+            </div>
+            
+            <div class="project-card">
+                <!-- <div class="project-icon">📊</div> -->
+                <h3>Availability Rate Analytics Dashboard</h3>
+                <p class="project-type">Data Analysis</p>
+                <p>Created and maintained the Mikrotrans Availability Rate Report using Python scripts that integrate operational and customer datasets. Provides real-time visibility into service performance metrics.</p>
+                <p class="project-tech">Python • SQL • Data Analysis • Reporting</p>
+                <a href="#" class="project-link">Go to</a>
+            </div>
+            
+            <div class="project-card">
+                <!-- <div class="project-icon">🗺️</div> -->
+                <h3>Customer Behavior Analysis</h3>
+                <p class="project-type">Data Analytics</p>
+                <p>Conducted comprehensive monthly analysis of customer behavior using Origin-Destination data. Generated insights into travel patterns, peak times, and service utilization to support strategic decisions.</p>
+                <p class="project-tech">SQL • Python • Data Analysis • Business Intelligence</p>
+                <a href="#" class="project-link">Go to</a>
+            </div>
+            
+            <div class="project-card">
+                <!-- <div class="project-icon">💼</div> -->
+                <h3>Ad-hoc Business Analytics</h3>
+                <p class="project-type">Business Analysis</p>
+                <p>Delivered custom analysis and reports to various stakeholders addressing specific business questions. Translated complex data into actionable recommendations for operational improvements.</p>
+                <p class="project-tech">SQL • Python • Power BI • Tableau</p>
+                <a href="#" class="project-link">Go to</a>
+            </div>
+            
+            <div class="project-card">
+                <!-- <div class="project-icon">🔧</div> -->
+                <h3>Personal Portfolio Website</h3>
+                <p class="project-type">Web Development</p>
+                <p>Built this modern, responsive portfolio website using Flask and Bootstrap. Features dark theme design with smooth scrolling navigation and optimized performance to showcase my professional experience.</p>
+                <p class="project-tech">Python • Flask • HTML/CSS • Bootstrap</p>
+                <a href="#" class="project-link">Go to</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container-xxl">
+        <!-- <p class="section-title">Want to know more?</p> -->
+        <h2 class="section-heading">A bit <span class="accent-word">about me.</span></h2>
+        <div class="divider"></div>
+        
+        <p class="about-intro">I am...</p>
+        
+        <div class="about-points">
+            <div class="about-point">
+                <div class="point-number">01</div>
+                <h3>Data Analysis & Reporting</h3>
+                <p>I excel at transforming raw data into meaningful reports and dashboards. With expertise in SQL, Python, Tableau, and Power BI, I conduct thorough analysis of customer behavior, operational metrics, and business trends to support data-driven decision-making.</p>
+            </div>
+            
+            <div class="about-point">
+                <div class="point-number">02</div>
+                <h3>Process Automation & Optimization</h3>
+                <p>Winner of RUBI award for automating daily customer reports using Tableau Prep, reducing analysis time by 80%. I create efficient Python scripts and automated workflows to minimize manual work and enhance data accuracy.</p>
+            </div>
+            
+            <div class="about-point">
+                <div class="point-number">03</div>
+                <h3>Data Engineering & Infrastructure</h3>
+                <p>Currently pursuing Data Engineering at Pacmann to expand my skills in data pipeline architecture, database design, and cloud infrastructure. Passionate about building robust data systems that scale with organizational needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container-xxl">
+        <!-- <p class="section-title">Professional Journey</p> -->
+        <h2 class="section-heading">My <span class="accent-word">Experience</span></h2>
+        <div class="divider"></div>
+        
+        <div class="experience-list">
+            <div class="experience-item">
+                <div class="job-title">Data Engineer (Currently)</div>
+                <div class="company">Pacmann</div>
+                <div class="date">Aug 2024 – Present</div>
+                <p>Advancing expertise in data engineering through comprehensive training covering data pipeline architecture, ETL processes, and cloud data infrastructure. Building foundational skills for enterprise-scale data systems.</p>
+                <p class="skills">Skills: Python • SQL • Data Engineering • Cloud Infrastructure</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Data Management Staff</div>
+                <div class="company">PT Transportasi Jakarta (Transjakarta)</div>
+                <div class="date">Nov 2022 – Sep 2024 (1 yr 11 mos)</div>
+                <p>🏆 <strong>Winner of RUBI Award</strong>: Automated daily customer report using Tableau Prep, reducing analysis time by at least 80%. Created and maintained Availability Rate Mikrotrans Report using Python scripts with operational and customer data. Conducted monthly customer behavior analysis based on Origin-Destination data. Provided ad-hoc analysis and reports to stakeholders across departments.</p>
+                <p class="skills">Skills: Python • SQL • Tableau • Tableau Prep • Data Analysis</p>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Service Development Staff</div>
+                <div class="company">PT Transportasi Jakarta (Transjakarta)</div>
+                <div class="date">Jun 2022 – Nov 2022 (6 months)</div>
+                <p>Supported service development initiatives within Jakarta's public transportation system, contributing to operational analysis and service improvement projects.</p>
+                <p class="skills">Skills: Business Analysis • Data Analysis • Reporting</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Education</div>
+                <div class="company">Institut Teknologi Sepuluh Nopember (ITS)</div>
+                <div class="date">2017 – 2021</div>
+                <p>Bachelor's degree in Physics with specialization in Health/Medical Physics. Developed strong analytical and problem-solving skills that form the foundation of my data analysis expertise.</p>
+                <p class="skills">Field: Physics • Health Medical Physics</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container-xxl">
+        <p class="section-title">Get in touch</p>
+        <h2 class="section-heading">Let's connect ↓</h2>
+        
+        <p class="contact-intro">I'm always excited to connect with like-minded professionals and discuss new opportunities. Feel free to reach out through any of these channels!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:adila.zahra@email.com" class="contact-link" title="Email">Email</a>
+            <a href="https://www.linkedin.com/in/adila-zahra-faradisa/" target="_blank" class="contact-link" title="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/dilafaradisa" target="_blank" class="contact-link" title="GitHub">GitHub</a>
+        </div>
+        
+        <a href="mailto:adila.zahra@email.com" class="cta-button">Get In Touch</a>
+    </div>
+</section>
+
+<script>
+    // Smooth scroll and active nav link
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && document.querySelector(href)) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Update active nav link on scroll
+    window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 {% endblock %}
