@@ -1,0 +1,29 @@
+body {
+    background: #fff0f6;
+    color: #333;
+}
+a, .btn {
+    transition: background 0.2s, color 0.2s;
+}
+.btn:hover {
+    background: #a64ca6 !important;
+    color: #fff !important;
+}
+.navbar {
+    background: #f8e1f4 !important;
+}
+.navbar-brand, .nav-link.active, .nav-link:focus, .nav-link:hover {
+    color: #a64ca6 !important;
+}
+.list-group-item {
+    border: none;
+    background: #fff0f6;
+    margin-bottom: 8px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #a64ca6;
+}
+footer {
+    background: #f8e1f4;
+    color: #a64ca6;
+}
