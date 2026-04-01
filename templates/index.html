@@ -41,38 +41,40 @@
             
             <div class="project-card">
                 <!-- <div class="project-icon">📊</div> -->
-                <h3>Availability Rate Analytics Dashboard</h3>
-                <p class="project-type">Data Analysis</p>
-                <p>Created and maintained the Mikrotrans Availability Rate Report using Python scripts that integrate operational and customer datasets. Provides real-time visibility into service performance metrics.</p>
-                <p class="project-tech">Python • SQL • Data Analysis • Reporting</p>
-                <a href="#" class="project-link">Go to</a>
-            </div>
-            
-            <div class="project-card">
-                <!-- <div class="project-icon">🗺️</div> -->
-                <h3>Customer Behavior Analysis</h3>
-                <p class="project-type">Data Analytics</p>
-                <p>Conducted comprehensive monthly analysis of customer behavior using Origin-Destination data. Generated insights into travel patterns, peak times, and service utilization to support strategic decisions.</p>
-                <p class="project-tech">SQL • Python • Data Analysis • Business Intelligence</p>
-                <a href="#" class="project-link">Go to</a>
+                <h3>OLX Secondhand Car Scraper</h3>
+                <p class="project-type">Web Scraping & Data Engineering</p>
+                <p>A web scraper that collects car listings from OLX Indonesia and transforms them into structured data. The pipeline extracts listing details such as title, price, and location, then stores the results in PostgreSQL via Docker. Outputs are available in both CSV and JSON formats, making the data ready for analysis</p>
+                <p class="project-tech">Python • SQL • Docker • BeautifulSoup</p>
+                <a href="https://github.com/dilafaradisa/olx-scraping" target="_blank"class="project-link">Go to</a>
             </div>
             
             <div class="project-card">
                 <!-- <div class="project-icon">💼</div> -->
-                <h3>Ad-hoc Business Analytics</h3>
+                <h3>Designing Data Warehouse</h3>
                 <p class="project-type">Business Analysis</p>
-                <p>Delivered custom analysis and reports to various stakeholders addressing specific business questions. Translated complex data into actionable recommendations for operational improvements.</p>
-                <p class="project-tech">SQL • Python • Power BI • Tableau</p>
-                <a href="#" class="project-link">Go to</a>
+                <p>A Walkthrough of a data warehouse design process, covers entire journey from requirements gathering to defining business processes, declaring grains, and producing a final dimensional model with fact tables and dimension tables.<p>
+                <p class="project-tech">Data Warehouse • Dimensional Modeling </p>
+                <a href="https://medium.com/@faradisa2605/implementing-slowly-changing-dimensions-in-elt-pipeline-for-olist-data-warehouse-4004772e5406" class="project-link">Go to</a>
             </div>
+
+            <div class="project-card">
+                <!-- <div class="project-icon">🗺️</div> -->
+                <h3>ELT Pipeline for Olist Data Warehouse</h3>
+                <p class="project-type">Data Engineering</p>
+                <p>An end-to-end ELT pipeline built for Olist, a Brazilian e-commerce company. The pipeline orchestrates three sequential tasks Extract, Load, and Transform, using Luigi, with data flowing through a three-layer architecture in PostgreSQL. Includes error monitoring via Sentry, structured logging, and task summaries to support observability and debugging.</p>
+                <p class="project-tech">SQL • Python • Luigi • Sentry</p>
+                <a href="https://github.com/dilafaradisa/elt-for-dwh" class="project-link">Go to</a>
+            </div>
+            
+            
             
             <div class="project-card">
                 <!-- <div class="project-icon">🔧</div> -->
-                <h3>Personal Portfolio Website</h3>
-                <p class="project-type">Web Development</p>
-                <p>Built this modern, responsive portfolio website using Flask and Bootstrap. Features dark theme design with smooth scrolling navigation and optimized performance to showcase my professional experience.</p>
-                <p class="project-tech">Python • Flask • HTML/CSS • Bootstrap</p>
-                <a href="#" class="project-link">Go to</a>
+                <h3>Data Warehouse Pipeline for Travel Platform</h3>
+                <p class="project-type">Data Engineering</p>
+                <p>An ELT Pipeline and data warehouse built for a demo project. The warehouse follows a star schema design with SCD Type 1 and Type 2 strategies across dimension tables. Transformations are handled entirely in dbt, while Luigi orchestrates the full pipeline from extraction to dbt run and test.</p>
+                <p class="project-tech">Python • SQL • dbt • Luigi</p>
+                <a href="https://github.com/dilafaradisa/travel-dwh-pipeline" class="project-link">Go to</a>
             </div>
         </div>
     </div>
@@ -85,13 +87,13 @@
         <h2 class="section-heading">A bit <span class="accent-word">about me.</span></h2>
         <div class="divider"></div>
         
-        <p class="about-intro">I am...</p>
+        <!-- <p class="about-intro">I am...</p> -->
         
         <div class="about-points">
             <div class="about-point">
                 <div class="point-number">01</div>
                 <h3>Data Analysis & Reporting</h3>
-                <p>I excel at transforming raw data into meaningful reports and dashboards. With expertise in SQL, Python, Tableau, and Power BI, I conduct thorough analysis of customer behavior, operational metrics, and business trends to support data-driven decision-making.</p>
+                <p>I have worked on transforming raw data into meaningful reports and dashboards. Using tools such as SQL, Python, Tableau, and Power BI, I analyze customer behavior, operational metrics, and business trends to help support decision making.</p>
             </div>
             
             <div class="about-point">
@@ -103,7 +105,7 @@
             <div class="about-point">
                 <div class="point-number">03</div>
                 <h3>Data Engineering & Infrastructure</h3>
-                <p>Currently pursuing Data Engineering at Pacmann to expand my skills in data pipeline architecture, database design, and cloud infrastructure. Passionate about building robust data systems that scale with organizational needs.</p>
+                <p>Currently pursuing Data Engineering at Pacmann to expand my skills in data pipeline architecture, and database design. Passionate about building robust data systems that scale with organizational needs.</p>
             </div>
         </div>
     </div>
@@ -118,26 +120,26 @@
         
         <div class="experience-list">
             <div class="experience-item">
-                <div class="job-title">Data Engineer (Currently)</div>
-                <div class="company">Pacmann</div>
+                <div class="job-title">Data Engineer Student</div>
+                <div class="company">Pacmann.ai</div>
                 <div class="date">Aug 2024 – Present</div>
-                <p>Advancing expertise in data engineering through comprehensive training covering data pipeline architecture, ETL processes, and cloud data infrastructure. Building foundational skills for enterprise-scale data systems.</p>
-                <p class="skills">Skills: Python • SQL • Data Engineering • Cloud Infrastructure</p>
+                <p>Advancing expertise in data engineering through comprehensive training covering data pipeline architecture, and ETL processes.</p>
+                <p class="skills">Skills: Python • SQL • Data Engineering • Luigi</p>
             </div>
 
             <div class="experience-item">
                 <div class="job-title">Data Management Staff</div>
                 <div class="company">PT Transportasi Jakarta (Transjakarta)</div>
-                <div class="date">Nov 2022 – Sep 2024 (1 yr 11 mos)</div>
-                <p>🏆 <strong>Winner of RUBI Award</strong>: Automated daily customer report using Tableau Prep, reducing analysis time by at least 80%. Created and maintained Availability Rate Mikrotrans Report using Python scripts with operational and customer data. Conducted monthly customer behavior analysis based on Origin-Destination data. Provided ad-hoc analysis and reports to stakeholders across departments.</p>
+                <div class="date">Nov 2022 – Sep 2024 </div>
+                <p> <strong>Winner of RUBI Award</strong>: Automated daily customer report using Tableau Prep, reducing analysis time by at least 80%. Created and maintained Availability Rate Mikrotrans Report using Python scripts with operational and customer data. Conducted monthly customer behavior analysis based on Origin-Destination data. Provided ad-hoc analysis and reports to stakeholders across departments.</p>
                 <p class="skills">Skills: Python • SQL • Tableau • Tableau Prep • Data Analysis</p>
             </div>
             
             <div class="experience-item">
                 <div class="job-title">Service Development Staff</div>
                 <div class="company">PT Transportasi Jakarta (Transjakarta)</div>
-                <div class="date">Jun 2022 – Nov 2022 (6 months)</div>
-                <p>Supported service development initiatives within Jakarta's public transportation system, contributing to operational analysis and service improvement projects.</p>
+                <div class="date">Jun 2022 – Nov 2022 </div>
+                <p>Supported service development initiatives within Jakarta's public transportation system, contributing service improvement projects.</p>
                 <p class="skills">Skills: Business Analysis • Data Analysis • Reporting</p>
             </div>
 
@@ -145,7 +147,7 @@
                 <div class="job-title">Education</div>
                 <div class="company">Institut Teknologi Sepuluh Nopember (ITS)</div>
                 <div class="date">2017 – 2021</div>
-                <p>Bachelor's degree in Physics with specialization in Health/Medical Physics. Developed strong analytical and problem-solving skills that form the foundation of my data analysis expertise.</p>
+                <p>Bachelor's degree in Physics with specialization in Health/Medical Physics. Developed strong analytical and problem solving skills that form the foundation of my data analysis expertise.</p>
                 <p class="skills">Field: Physics • Health Medical Physics</p>
             </div>
         </div>
@@ -155,18 +157,18 @@
 <!-- Contact Section -->
 <section id="contact">
     <div class="container-xxl">
-        <p class="section-title">Get in touch</p>
-        <h2 class="section-heading">Let's connect ↓</h2>
+        <!-- <p class="section-title">Get in touch</p> -->
+        <h2 class="section-heading">Let's connect!</h2>
         
-        <p class="contact-intro">I'm always excited to connect with like-minded professionals and discuss new opportunities. Feel free to reach out through any of these channels!</p>
+        <p class="contact-intro">I'm always excited to connect and discuss new opportunities. Feel free to reach out through any of these channels!</p>
         
         <div class="contact-links">
-            <a href="mailto:adila.zahra@email.com" class="contact-link" title="Email">Email</a>
+            <a href="mailto:faradisa2605@gmail.com" class="contact-link" title="Email">Email</a>
             <a href="https://www.linkedin.com/in/adila-zahra-faradisa/" target="_blank" class="contact-link" title="LinkedIn">LinkedIn</a>
             <a href="https://github.com/dilafaradisa" target="_blank" class="contact-link" title="GitHub">GitHub</a>
         </div>
         
-        <a href="mailto:adila.zahra@email.com" class="cta-button">Get In Touch</a>
+        <a href="mailto:faradisa2605@gmail.com" class="cta-button">Get In Touch</a>
     </div>
 </section>
 
